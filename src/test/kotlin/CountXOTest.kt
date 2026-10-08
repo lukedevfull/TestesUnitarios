@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Assumptions
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 
 class countXOTest {
 
@@ -38,5 +39,21 @@ class countXOTest {
     //todos os testes abaixop só vão rodar caso a condição assima seja verdadeira
 
     Assertions.assertEquals(false, countXO("xxxxxxxxooooooo"))
+    }
+
+    //testa com base em exceção
+    @Test
+    fun exceptionBasedTest() {
+        assertThrows<Exception>{
+            testThrows()
+        }
+
+    }
+    @Test
+    fun testNotNull(){
+        //teste inutil nesse cenario
+        Assertions.assertNotNull(countXO("hasgyihasguiyasdfgiuaer"))
+        Assertions.assertNotNull(countXO("xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"))
+        //independente da resposta ele vai passar  pois é impossivel retornar nulo dessa função
     }
 }
