@@ -1,3 +1,7 @@
+/**
+ * Conta as quantidades de 'x' e 'o' em uma string (ignorando maiúsculas/minúsculas)
+ * e retorna true se as quantidades forem iguais e diferentes de zero.
+ */
 fun countXO(str: String): Boolean {
     val strLower = str.lowercase()
 
@@ -16,5 +20,7 @@ fun countXO(str: String): Boolean {
     return countO == countX && countO != 0
 
 }
+
+// Função usada apenas para testar o tratamento de exceções nos testes
 fun testThrows() { throw Exception("testThrows deu ruim mane") }
 

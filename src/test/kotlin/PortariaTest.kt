@@ -1,15 +1,6 @@
 import org.junit.jupiter.api.Assertions
 import kotlin.test.Test
 
-//PODE RECEBER MENOS DE 18
-//TIPO TEM QUE SER COMUM, PREMIUM OU LUXO
-// CODIGOS ACETOS: INICIADOS EM XT E XL
-
-//
-//    return if (tipo == "comum" && codigo.startsWith("xt")) {
-//        "Welcome :)"
-//    } else if (codigo.startsWith("xl")) {
-//        "Welcome :)"
 
 class PortariaTest {
     @Test
